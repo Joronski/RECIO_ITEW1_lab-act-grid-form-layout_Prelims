@@ -1,0 +1,42 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: grid;
+    grid-template-rows: 70px 70px 70px 70px;
+    grid-template-columns: 200px 400px;
+}
+
+.grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6, .grid-7 {
+    border: 3px dashed orange;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-2 input, .grid-4 input, .grid-6 textarea {
+    width: 90%;
+    padding: 2px;
+    box-sizing: border-box;
+}
+
+.grid-7 {
+    grid-column: 1 / span 2;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    padding: 4px;
+    box-sizing: border-box;
+}
